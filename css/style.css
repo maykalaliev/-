@@ -4,7 +4,8 @@ body {
 
 h1 {
   font-size: 60px;
-  z-index: 1; }
+  z-index: 1;
+  font-weight: normal; }
 
 h2 {
   font-size: 60px;
@@ -29,6 +30,11 @@ p {
   background: #68b738;
   padding: 23px 40px;
   text-align: center; }
+  .button:hover {
+    background: #5eaa2f; }
+  .button:active {
+    background: #5eaa30;
+    color: #8fc46e; }
 
 .headerlist {
   padding-top: 52px;
@@ -69,13 +75,17 @@ p {
   text-transform: uppercase;
   color: #fff;
   font-size: 20px; }
+  .header__menuitem a:hover {
+    color: #c1ddb1; }
+  .header__menuitem a:active {
+    color: #94c478; }
 
 .main__programselect {
   position: relative; }
 
 .prograselect__text {
   margin-left: 6.8%;
-  margin-top: 120px;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,3 +225,73 @@ p {
 .description__paragraph {
   word-wrap: wrap;
   padding-top: 70px; }
+
+.resultlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.resultlist__item {
+  -ms-flex-preferred-size: 37.6%;
+  flex-basis: 37.6%;
+  margin-top: 70px;
+  padding: 13px 24px;
+  border: 2px solid #cdcdcd;
+  border-radius: 3px; }
+  .resultlist__item:first-child {
+    margin-right: 40px; }
+  .resultlist__item h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    line-height: 37px; }
+  .resultlist__item span {
+    display: block;
+    text-align: center;
+    color: #444;
+    font-size: 14px;
+    background: #f2f2f2;
+    position: relative;
+    bottom: -20px; }
+
+.example__cost {
+  margin-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  .example__cost span {
+    -ms-flex-preferred-size: 37.6%;
+    flex-basis: 37.6%;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #111111;
+    line-height: 20px;
+    text-align: center; }
+    .example__cost span:last-child {
+      font-weight: bold;
+      margin-left: 80px; }
+
+.example__examplelist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.catitem {
+  margin-left: 40px; }
+
+input[type=range] {
+  display: block;
+  width: 433px;
+  margin: 0 auto; }
